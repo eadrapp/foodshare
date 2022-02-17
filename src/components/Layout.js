@@ -4,6 +4,7 @@ import RightSidebar from "./RightSidebar";
 import Box from "@mui/material/Box";
 import { Grid, Hidden } from "@mui/material";
 import { useTheme } from "@mui/system";
+import "./Layout.css";
 // import { getUsers } from "../redux/authSlice";
 // import { useDispatch } from "react-redux";
 
@@ -14,7 +15,7 @@ export default function Layout({ children }) {
 //     dispatch(getUsers());
 //   }, [dispatch]);
   return (
-    <Box
+    <Box 
       sx={{
         maxWidth: theme.breakpoints.values.lg,
         margin: "0 auto",
@@ -27,19 +28,12 @@ export default function Layout({ children }) {
         <Grid item xs={11} lg={10}>
           <Grid container>
             <Grid item xs={12} lg={8}>
-              <Box
-                sx={{
-                  height: "100vh",
-                  margin: "0 1rem",
-                  borderLeft: "1px solid #ccc",
-                  borderRight: "1px solid #ccc",
-                }}
-              >
+              <Box className="item" >
                 {children}
               </Box>
             </Grid>
             <Hidden lgDown>
-              <Grid item lg={4} sx={{ height: "100vh" }}>
+              <Grid item lg={4}>
                 {/* <RightSidebar /> */}
               </Grid>
             </Hidden>
