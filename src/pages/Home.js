@@ -2,6 +2,8 @@ import { CircularProgress, Grid, IconButton, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useEffect } from "react";
 import AssistantIcon from "@mui/icons-material/Assistant";
+import Logo from "./Logo.svg";
+import "./Home.css";
 // import { useDispatch, useSelector } from "react-redux";
 
 export default function Home() {
@@ -13,19 +15,19 @@ export default function Home() {
 
     return(
         <Box>
-        <Box borderBottom="1px solid #ccc" padding="8px 20px">
-          <Grid container justifyContent="space-between" alignItems="center">
-            <Grid item>
-              <Typography variant="h6">Home</Typography>
-            </Grid>
-            <Grid item>
-              <IconButton>
-                <AssistantIcon />
-              </IconButton>
-            </Grid>
+        <Box className="header">
+          <Grid className="layout">
+                <Grid className="center">
+                    <img className="logo" src={Logo} alt="Logo" />
+                </Grid>
+                <Grid className="center">
+                <IconButton>
+                    <AssistantIcon className="icon"/>
+                </IconButton>
+                </Grid>
           </Grid>
         </Box>
-        <Box height="92vh" sx={{ overflowY: "scroll" }}>
+        <Box className="posts">
           {/* <AddPost />
           <Box textAlign="center" marginTop="1rem">
             {status === "loading" && (

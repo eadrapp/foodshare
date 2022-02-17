@@ -1,0 +1,28 @@
+.logo {
+    /* logo size */
+    height: 3rem;
+  }
+
+.icon{
+    color: #F26671;
+}
+
+.header{
+    border-bottom: 1px solid #ccc;
+    padding: 8px 20px;
+}
+
+.layout{
+    display: flex;
+    justify-content: space-between;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+}
+
+.posts{
+    height: 90vh;
+    overflow: auto;
+}
