@@ -1,0 +1,9 @@
+.item {
+    height: 100vh;
+    margin: 0 1rem;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.sidebar {
+    height: 100vh;
+}
