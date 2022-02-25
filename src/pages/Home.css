@@ -1,3 +1,10 @@
+.homepage{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .logo {
     /* logo size */
     height: 3rem;
@@ -26,3 +33,57 @@
     height: 90vh;
     overflow: auto;
 }
+
+.name-picker {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    color: #F26671;
+}
+
+.name-picker svg {
+    stroke: #F26671;
+    cursor: pointer;
+}
+
+.name-picker-name {
+    color: #F26671;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+}
+.posts {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    overflow: auto;
+    flex: 1;
+  }
+
+  .message-row {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    flex-direction: row;
+  }
+
+  .message {
+    color: white;
+    background: black;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+    max-width: 20rem;
+    min-height: auto;
+    overflow-wrap: break-word;
+    position: relative;
+    transition: transform 0.3s;
+  }
+
+  .message-user {
+    position: absolute;
+    left: 0;
+    top: -0.8rem;
+    font-size: 0.5rem;
+  }
