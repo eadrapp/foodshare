@@ -4,18 +4,27 @@
     border-top: 2px solid white;
     display: flex;
     align-items: center;
-    padding: 0 1rem;
+    justify-content: center;
+    padding-bottom: 1rem;
     background: rgba(255, 255, 255, 0.3);
     position: relative;
   }
+
+  .post{
+      width: 95%;
+      display: flex;
+      justify-content: flex-end;
+  }
+
   .text-input {
     width: 100%;
     border: 1px solid white;
-    height: 2rem;
+    height: 3rem;
     border-radius: 1rem;
-    padding: 0 1rem;
-    background: black;
-    color: white;
+    padding-bottom: 1rem;
+    background: white;
+    color: black;
+    box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2), 0 0.3rem 1rem 0 rgba(0, 0, 0, 0.19);
   }
   .send {
     background: white;
@@ -30,10 +39,10 @@
     align-items: center;
     justify-content: center;
   }
-  .send:hover {
-    background: black;
-    border: 1px solid white;
+  .send svg{
+    color: #F26671;
   }
+  
   .send:hover svg {
-    stroke: white;
+    color: #FB6E6E80;
   }
