@@ -26,12 +26,12 @@ export default function Home() {
     // set the "messages" to be a new array
     // that contains the new message + all the old messages
     setMessages([newMessage, ...messages]);
-    
+
+  }
+
     // every time state changes, React "re-renders"
     // so this console.log will run again
     console.log(messages);
-
-  }
 
     return(
         <Box className="homepage">
@@ -45,12 +45,12 @@ export default function Home() {
                   </Grid>
             </Grid>
           </Box>
+          <TextInput sendPost={sendPost} />
           <Box className="posts">
             {messages.map((msg, i) => {
               return <Post {...msg} key={i} fromMe={msg.user === username} />;
             })}
           </Box>
-            <TextInput sendPost={sendPost} />
         </Box>
     );
 

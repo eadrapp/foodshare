@@ -1,12 +1,11 @@
-.footer {
+.top {
     height: 4rem;
     width: 100%;
-    border-top: 2px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 1rem;
-    background: rgba(255, 255, 255, 0.3);
+    padding-top:1rem;
     position: relative;
   }
 
@@ -22,12 +21,15 @@
     height: 3rem;
     border-radius: 1rem;
     padding-bottom: 1rem;
+    padding-left: 1rem;
     background: white;
     color: black;
-    box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2), 0 0.3rem 1rem 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2), 0 0.15rem 0.5rem 0 rgba(0, 0, 0, 0.19);
   }
   .send {
-    background: white;
+    background: none;
+    padding-top: 1rem;
+    padding-right:1rem;
     border-radius: 50%;
     border: none;
     height: 1.7rem;

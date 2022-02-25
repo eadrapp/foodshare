@@ -6,7 +6,7 @@ function TextInput(props) {
   const [text, setText] = useState("");
 
   function send() {
-    props.sendMessage(text);
+    props.sendPost(text);
     setText("");
   }
   function onKeyPress(e) {
@@ -16,7 +16,7 @@ function TextInput(props) {
   }
 
   return (
-    <footer className="footer">
+    <div className="top">
         <div className="post">
             <input
                 className="text-input"
@@ -28,7 +28,7 @@ function TextInput(props) {
                 <PostAddIcon />
             </button>
         </div>
-    </footer>
+    </div>
   );
 }
 
