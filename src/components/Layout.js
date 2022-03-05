@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import LeftSidebar from "./LeftSidebar";
-import RightSidebar from "./RightSidebar";
+import LeftSidebar from "./LeftSidebar.js";
+import RightSidebar from "./RightSidebar.js";
 import Box from "@mui/material/Box";
 import { Grid, Hidden } from "@mui/material";
 import { useTheme } from "@mui/system";
@@ -15,6 +15,7 @@ export default function Layout({ children }) {
 //     dispatch(getUsers());
 //   }, [dispatch]);
   return (
+    <>
     <Box 
       sx={{
         maxWidth: theme.breakpoints.values.lg,
@@ -23,7 +24,7 @@ export default function Layout({ children }) {
     >
       <Grid container>
         <Grid item xs={1} lg={2}>
-          {/* <LeftSidebar /> */}
+          <LeftSidebar />
         </Grid>
         <Grid item xs={11} lg={10}>
           <Grid container>
@@ -33,13 +34,14 @@ export default function Layout({ children }) {
               </Box>
             </Grid>
             <Hidden lgDown>
-              <Grid item lg={4}>
-                {/* <RightSidebar /> */}
+              <Grid item lg={2}>
+                <RightSidebar/>
               </Grid>
             </Hidden>
           </Grid>
         </Grid>
       </Grid>
     </Box>
+    </>
   );
 }
