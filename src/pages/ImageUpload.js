@@ -20,7 +20,7 @@ const PreviewContainer = styled.div`
   }
 `;
 
-export default function ImgUploader() {
+export default function ImageUpload() {
   return (
     <Uploady
       destination={{ url: "[upload-url]" }}
