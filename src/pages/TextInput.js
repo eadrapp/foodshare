@@ -33,7 +33,11 @@ function TextInput(props) {
           </div>
       </div>
       <div className="img-upload">
-        <ImageUpload />
+      <input
+          type="file"
+          ref={props.fileRef}
+          onChange={props.handleFileChange}
+        />
       </div>
     </div>
   );
