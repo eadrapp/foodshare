@@ -23,16 +23,36 @@ const PreviewContainer = styled.div`
 export default function ImageUpload() {
   return (
     <Uploady
-      destination={{ url: "[upload-url]" }}
+      destination={{ url: "./images" }}
       enhancer={mockSenderEnhancer}
     >
       <div>
         <UploadButton>Upload image</UploadButton>
-
-        <PreviewContainer>
-          <UploadPreview />
-        </PreviewContainer>
       </div>
+
+      <PreviewContainer>
+        <UploadPreview />
+      </PreviewContainer>
+
     </Uploady>
   );
 }
+
+// function ImagePic() {
+//   return (
+//     <Uploady
+//     destination={{ url: "./images" }}
+//     enhancer={mockSenderEnhancer}
+//     >
+    
+//     <PreviewContainer>
+//         <UploadPreview />
+//     </PreviewContainer>
+
+//     </Uploady>
+//   );
+// }
+
+// export {
+//   ImagePic,
+// }
