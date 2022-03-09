@@ -25,6 +25,7 @@ function TextInput(props) {
                   value={text}
                   onChange={(e) => setText(e.target.value)}
                   onKeyPress={onKeyPress}
+                  overflow-wrap="break-word"
               />
               <button className="send" onClick={send}>
                   <PostAddIcon />

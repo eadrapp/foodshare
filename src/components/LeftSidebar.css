@@ -1,0 +1,52 @@
+.title {
+    color: #F26671;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.users {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+    padding-left:0.5rem;
+}
+
+.section{
+    margin-top:2rem;
+}
+
+.name{
+    padding-top:1rem;
+    display: flex;
+    align-items: center;
+    padding-bottom:none;
+    margin-bottom:none;
+}
+
+.icon {
+    font-size:large;
+}
+
+.status{
+    color:green;
+    font-style: italic;
+    font-size: 0.6rem;
+    padding-left:2rem;
+    padding-top:none;
+}
+
+.status2{
+    color:red;
+    font-style: italic;
+    font-size: 0.6rem;
+    padding-left:2rem;
+    padding-top:none;
+}
+
+.profile{
+    padding-bottom:1rem;
+}

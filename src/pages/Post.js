@@ -1,3 +1,5 @@
+import {ImagePic} from "./ImageUpload.js";
+
 export default function Post(props) {
     // add the date
     // add the username
@@ -8,6 +10,7 @@ export default function Post(props) {
         <div className="message">
           <span className="message-user">{props.user}</span>
           <span>{props.text}</span>
+          <ImagePic/>   
         </div>
       </div>
     );
