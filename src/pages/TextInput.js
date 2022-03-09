@@ -1,7 +1,6 @@
 import "./TextInput.css";
 import { useState } from "react";
 import PostAddIcon from '@mui/icons-material/PostAdd';
-import ImageUpload from "./ImageUpload.js";
 
 function TextInput(props) {
   const [text, setText] = useState("");

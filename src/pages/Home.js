@@ -1,21 +1,14 @@
-import { CircularProgress, Grid, IconButton, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useEffect, useState, useRef } from "react";
-import AssistantIcon from "@mui/icons-material/Assistant";
 import Logo from "./Logo.svg";
 import "./Home.css";
 import LoginForm from "./LoginForm.js";
 import TextInput from "./TextInput";
 import Post from "./Post";
-import styled from "styled-components";
-import Uploady from "@rpldy/uploady";
-import { getMockSenderEnhancer } from "@rpldy/mock-sender";
-import PreviewsWithClear from "./PreviewsWithClear";
-// import { useDispatch, useSelector } from "react-redux";
 
 export default function Home() {
   const myName = localStorage.getItem("name") || "";
-  const mockSenderEnhancer = getMockSenderEnhancer();
   // our username
   const [username, setUsername] = useState(myName);
   const [messages, setMessages] = useState([]);
@@ -54,7 +47,6 @@ export default function Home() {
   console.log(messages);
 
   return (
-    <Uploady destination={{ url: "./images" }} enhancer={mockSenderEnhancer}>
       <Box className="homepage">
         <Box className="header">
           <Grid className="layout">
@@ -73,6 +65,5 @@ export default function Home() {
           })}
         </Box>
       </Box>
-    </Uploady>
   );
 }
