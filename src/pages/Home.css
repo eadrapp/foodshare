@@ -73,7 +73,10 @@
     color: black;
     background: white;
     box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2), 0 0.15rem 0.5rem 0 rgba(0, 0, 0, 0.19);
-    padding: 2rem 1rem;
+    padding-top: 1rem;
+    padding-bottom:2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin: 0.7rem;
     border-radius: 0.75rem;
     max-width: 32rem;
@@ -85,11 +88,26 @@
   }
 
   .message-user {
-    position: absolute;
     color: #F26671;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     left: 1;
-    top: 0.5rem;
+    top: none;
     /* font-size: 2rem; */
+  }
+
+  .top-row{
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+  }
+
+  .greeny{
+    color: #50C878;
+    font-weight: semi-bold;
+  }
+
+  .bluey{
+    color: #0096FF;
+    font-weight: semi-bold;
   }

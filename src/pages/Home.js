@@ -1,7 +1,5 @@
 import { 
   Grid,
-  FormControl,
-  NativeSelect, 
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useState, useRef } from "react";
@@ -17,6 +15,7 @@ export default function Home() {
   const [username, setUsername] = useState(myName);
   const [messages, setMessages] = useState([]);
   const [imgSrc, setImgSrc] = useState("");
+  const [postType, setPostType] = useState("Offer");
   const fileRef = useRef();
 
   function sendPost(text) {
@@ -27,11 +26,13 @@ export default function Home() {
       time: Date.now(),
       user: username,
       imageSrc: imgSrc,
+      postType: postType,
     };
     // set the "messages" to be a new array
     // that contains the new message + all the old messages
     fileRef.current.value = null;
     setImgSrc("");
+    setPostType("");
     setMessages([newMessage, ...messages]);
   }
 
@@ -46,9 +47,6 @@ export default function Home() {
   const handleFileChange = (e) => {
     handleFileUpload(e.target.files[0]);
   }
-  // every time state changes, React "re-renders"
-  // so this console.log will run again
-  console.log(messages);
 
   return (
       <Box className="homepage">
@@ -62,7 +60,7 @@ export default function Home() {
             </Grid>
           </Grid>
         </Box>
-        <TextInput sendPost={sendPost} handleFileChange={handleFileChange} handleFileUpload={handleFileUpload} fileRef={fileRef}/>
+        <TextInput sendPost={sendPost} handleFileChange={handleFileChange} handleFileUpload={handleFileUpload} fileRef={fileRef} setPostType={setPostType}/>
         <Box className="posts">
           {messages.map((msg, i) => {
             return <Post {...msg} key={i} fromMe={msg.user === username} />;

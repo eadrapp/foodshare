@@ -62,3 +62,13 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
+
+  .extras{
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+  }
+
+  .post-type{
+    cursor: pointer;
+  }
