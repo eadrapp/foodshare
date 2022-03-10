@@ -7,9 +7,10 @@ align-items: center;
 
 img {
   margin: 5px;
-  max-width: 20rem;
+  max-width: 18rem;
   height: auto;
   margin-right: 10px;
+  padding-top:5px;
 }
 `;
 
