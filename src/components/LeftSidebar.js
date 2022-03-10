@@ -14,7 +14,7 @@ export default function LeftSidebar() {
 
       <Box className="profile">
         <Box>
-          <AccountCircleIcon fontSize="large" className="icon" />
+          <AccountCircleIcon color="success" fontSize="large" className="icon" />
         </Box>
         <div className="person">
           <span className="users">Kim Kardashian</span>
@@ -24,7 +24,7 @@ export default function LeftSidebar() {
 
       <Box className="profile">
         <Box className="name">
-          <AccountCircleIcon fontSize="large" className="icon" />
+          <AccountCircleIcon color="disabled" fontSize="large" className="icon" />
         </Box>
         <div className="person">
           <span className="users">Jack Black</span>
@@ -34,7 +34,7 @@ export default function LeftSidebar() {
 
       <Box className="profile">
         <Box className="name">
-          <AccountCircleIcon fontSize="large" className="icon" />
+          <AccountCircleIcon color="disabled" fontSize="large" className="icon" />
         </Box>
         <div className="person">
           <span className="users">Joe Biden</span>
