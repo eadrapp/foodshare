@@ -1,4 +1,9 @@
+.background{
+    background-color:#ebf3f4;
+}
+
 .item {
+    background-color:#fdb7b7;
     height: 100vh;
     margin: 0 1rem;
     border-left: 1px solid #ccc;

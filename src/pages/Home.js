@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import Logo from "./Logo.svg";
 import "./Home.css";
 import LoginForm from "./LoginForm.js";
