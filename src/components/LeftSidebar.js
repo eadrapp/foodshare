@@ -27,7 +27,7 @@ export default function LeftSidebar() {
           <AccountCircleIcon color="disabled" fontSize="large" className="icon" />
         </Box>
         <div className="person">
-          <span className="users">Jack Black</span>
+          <span className="users">RuPaul</span>
           <span className="status2">last active 2hr ago</span>
         </div>
       </Box>
